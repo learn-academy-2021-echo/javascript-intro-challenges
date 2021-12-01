@@ -46,3 +46,11 @@ var theAnswer = 42
 console.log(theAnswer/2);
 console.log(theQuestion.length);
 console.log(theQuestion.indexOf("f"));
+
+console.log(theAnswer + " " + theQuestion);
+
+console.log(theQuestion.slice(6, 18));
+
+console.log(theQuestion[0]);
+
+console.log(theQuestion > theAnswer);
