@@ -1,4 +1,4 @@
-// Hannah and Warren's intro file
+// Hannah and Warren's intro file.
 
 console.log(1, 34 + 71);
 
