@@ -49,7 +49,7 @@ console.log("The number is odd");
 
 //Write a statement that takes a variable of a grade percentage and logs the letter grade for that percentage, if the grade is 100% log "perfect score", if the grade is zero log "no grade available."
 
-var grade = 87
+var grade = 55
 
 if (grade === 100) {
   console.log("Perfect Score!");
@@ -60,9 +60,16 @@ if (grade === 100) {
 } else if (grade <= 89 && grade >= 80) {
   console.log("You got an B!");
 } else if (grade <= 79 && grade >= 70) {
-  console.log("You got an C");
+  console.log("You got an C!");
 }else if (grade <= 69 && grade >= 60) {
-  console.log("You got an D");
+  console.log("You got an D!");
 } else  {
-  console.log("You got an F :()");
+  console.log("You got an F :(");
 }
+
+
+//Write a statement that takes a variable of a boolean, number, or string data type and logs the data type of the variable. HINT: Check out the JavaScript typeof operator.
+
+var iable = false
+var iableTwo = typeof iable
+console.log(iableTwo)
