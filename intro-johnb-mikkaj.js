@@ -62,10 +62,10 @@ console.log(20, "LEARN"[0] !== "l");
 var theQuestion = "life, the universe, and everything";
 var theAnswer = 42;
 
-console.log(theAnswer/2);
-console.log(theQuestion.length);
-console.log(theQuestion.indexOf("f"));
-console.log(theQuestion + " " + theAnswer);
-console.log(theQuestion.splice(6,18));
-console.log(theQuestion.charAt(0));
-console.log (theQuestion.length > theAnswer);
+console.log(21, theAnswer/2);
+console.log(22, theQuestion.length);
+console.log(23, theQuestion.indexOf("f"));
+console.log(24, theQuestion + " " + theAnswer);
+console.log(25, theQuestion.slice(6,18));
+console.log(26, theQuestion.charAt(0));
+console.log (27, theQuestion.length > theAnswer);
