@@ -57,3 +57,15 @@ console.log(19, "LEARN"[0] === "l");
 
 //Modify the code from the previous question to return true
 console.log(20, "LEARN"[0] !== "l");
+
+//challenges 21 to 27
+var theQuestion = "life, the universe, and everything";
+var theAnswer = 42;
+
+console.log(theAnswer/2);
+console.log(theQuestion.length);
+console.log(theQuestion.indexOf("f"));
+console.log(theQuestion + " " + theAnswer);
+console.log(theQuestion.splice(6,18));
+console.log(theQuestion.charAt(0));
+console.log (theQuestion.length > theAnswer);
