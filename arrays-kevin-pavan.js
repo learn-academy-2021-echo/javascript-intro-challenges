@@ -104,9 +104,10 @@ console.log(alphabetical.reverse())
 var oddIndexes = []
 // Write the code that logs the values from the numbers array that are at odd indexes.
 
-console.log(221, 7, 87);
+console.log(numbers[1], numbers[3], numbers[5])
 
 // Write the code that adds the values from odd indexes into the oddIndexes array.
-
-var oddIndexes = [221, 7, 87]
-console.log(oddIndexes);
+oddIndexes.push(numbers[1])
+oddIndexes.push(numbers[3])
+oddIndexes.push(numbers[5])
+console.log(oddIndexes)
