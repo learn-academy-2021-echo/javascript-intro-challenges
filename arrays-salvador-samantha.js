@@ -78,6 +78,6 @@ var oddIndexes = []
 // Write the code that logs the values from the numbers array that are at odd indexes.
 console.log(numbers[1], numbers[3], numbers[5])
 // Write the code that adds the values from odd indexes into the oddIndexes array.
-var sum = numbers[1] + numbers[3] + numbers[5]
-oddIndexes = [sum]
+
+oddIndexes = [numbers[1], numbers[3], numbers[5]]
 console.log(oddIndexes)
