@@ -44,4 +44,4 @@ if(numbers === 0){
 } else {
     console.log("sth. else");
 }
- 
+
