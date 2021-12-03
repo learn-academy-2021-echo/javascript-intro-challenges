@@ -77,12 +77,15 @@ let name_array2 = ["kirk", "mikka", "kevin"];
 // Consider the variables:
 
  var numbers = [42, 221, 71, 7, 18, 87]
- var oddIndexes = [1,3,5]
+ var oddIndexes = []
 
 // Write the code that logs the values from the numbers array that are at odd indexes.
-var ["0","1","2","3","4","5"]=[42, 221, 71, 7, 18, 87];
-console.log("1");
-console.log("3");
-console.log("5");
+// oddIndexes.push(numbers[1]);
+// oddIndexes.push(numbers[3]);
+// oddIndexes.push(numbers[5]);
+//
+// console.log(oddIndexes);
 
 // Write the code that adds the values from odd indexes into the oddIndexes array.
+oddIndexes.push(numbers[(1,3,5)]);
+console.log(oddIndexes);
