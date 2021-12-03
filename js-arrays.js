@@ -21,3 +21,5 @@ var groceryList = ["chips", "dip", "cookies"]
 console.log(groceryList.slice(0, 2));
 groceryList.push("beans")
 console.log(groceryList);
+
+// Gluay was here!
