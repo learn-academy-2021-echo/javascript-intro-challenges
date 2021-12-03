@@ -22,6 +22,7 @@ console.log(9, myName[0]);
 
 console.log(10, myName.toUpperCase());
 
+
 var num1 = 34 % 3
 var num2 = 67 % 2
 console.log(11, num1 > num2)
@@ -40,3 +41,4 @@ console.log(17, string1.includes('RN'));
 console.log(18, string1.includes('rn'));
 console.log(19, string1[0] === "l");
 console.log(20, string1[0] === "L");
+
