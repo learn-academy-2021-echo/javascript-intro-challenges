@@ -24,9 +24,30 @@
 
 // Looping over an array. Consider this variable:
 var nums = [3, 57, -9, 20, 67];
-// Create a loop that will log the highest number from the array. Expected output --> 67
+// var largest = 0
+
+// // Create a loop that will log the highest number from the array. Expected output --> 67
+// for (let i = 0; i < nums.length; i++) {
+//     if (largest < nums[i]){
+//         largest = nums[i]
+//     }
+// }
+// console.log(largest)
+
 // Create a loop that will log the lowest number from the array Expected output --> -9
+// var smallest = 0
+// for (let i = 0; i < nums.length; i++) {
+//     if (smallest > nums[i]){
+//         smallest = nums[i]
+//     }
+// }
+// console.log(smallest)
+
 // Create a loop that will log the remainder of each number when divided by 2. Expected output --> 1, 1, -1, 0, 1
+for (let i = 0; i < nums.length; i++) {
+    console.log(nums[i] % 2);
+}
+
 // Looping over a string. Consider this variable:
 var myString = "learn student";
 // Write the code that will log the number of times the letter "e" occurs in the string. Expected output --> 2
