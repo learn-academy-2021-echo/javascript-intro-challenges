@@ -77,4 +77,20 @@ var numbers = [42, 221, 71, 7, 18, 87]
 var oddIndexes = []
 // Write the code that logs the values from the numbers array that are at odd indexes.
 
+for(var i=0; i<numbers.length; i++){
+    if (i%2 === 1){
+        oddIndexes.push(numbers[i])
+    }
+}
+
+console.log(oddIndexes);
+
 // Write the code that adds the values from odd indexes into the oddIndexes array.
+
+for(var i=0; i<numbers.length; i++){
+    if (i%2 === 1){
+        oddIndexes.push(numbers[i])
+    }
+}
+
+console.log(oddIndexes);
