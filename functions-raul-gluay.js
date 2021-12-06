@@ -85,8 +85,33 @@
 
 
 // Write a function named yelling that takes a string as an argument and return the string in all uppercase case letters.
-const yelling = (word) => {
+// const yelling = (word) => {
 
-  return word.toUpperCase();
+//   return word.toUpperCase();
+// }
+// console.log(yelling("done!"));
+
+// The World Translator
+// (a) Write a function named helloWorld that takes a language code (e.g. "es", "de", "en") as an argument and returns "Hello World!" in the given language. Ensure you function works for at least 5 languages.
+// (b) Have your function default to returning English.
+var languages = ["es", "de", "en", "ch", "hi"]
+
+const helloWorld = (array) =>{
+    if (array === "en"){
+     return "Hello World"
+  } else if (array === "de"){
+    return "Hallo Welt"
+  } else if (array === "es"){
+    return "Hola Mundo"
+  } else if (array === "ch"){
+    return "你好，世界"
+  } else if (array === "hi"){
+    return "aloha honua"
+  } else {
+    return "Hello World"
+  }
+  
+  
+  
 }
-console.log(yelling("done!"));
+console.log(helloWorld("ht"));
