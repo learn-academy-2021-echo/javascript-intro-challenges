@@ -34,14 +34,14 @@ console.log(triple(5))
 const multiply = (num1, num2) => {
   return num1 * num2
 }
-console.log(multiply(2,3));
+console.log(multiply(2, 3));
 // Write a function named divisibleBy that takes two numbers as arguments and returns whether the first number is evenly divisible by the second so that divisibleBy(10, 5) logs "10 is evenly divisible by 5".
 //
 const divisibleBy = (num1, num2) => {
   if (num1 % num2 === 0) {
     return `${num1} is divisible by ${num2}`
   } else {
-  return  `${num1} is not divisible by ${num2}`
+    return `${num1} is not divisible by ${num2}`
   }
 }
 console.log(divisibleBy(10, 5));
@@ -73,7 +73,7 @@ console.log(isLonger('ocean', 'sun'));
 const greaterNum = (num1, num2) => {
   if (num1 === num2) {
     return `The numbers are equal`
-  } else if (num1 > num2){
+  } else if (num1 > num2) {
     return num1
   } else {
     return num2
@@ -91,7 +91,27 @@ console.log(yelling('helloWorld'));
 // STRETCH Challenges
 // The World Translator
 // (a) Write a function named helloWorld that takes a language code (e.g. "es", "de", "en") as an argument and returns "Hello World!" in the given language. Ensure you function works for at least 5 languages.
-const helloWorld = (language) => {
+// const helloWorld = (language) => {
+//   if (language === 'es') {
+//     return 'Hola Mundo'
+//   } else if (language === 'de') {
+//     return 'Hej Verden'
+//   } else if (language === 'en') {
+//     return 'Hello World'
+//   } else if (language === 'ge') {
+//     return 'Hallo Welt'
+//   } else if (language === 'sl') {
+//     return 'Ahoj svet'
+//   }
+// }
+// console.log(helloWorld('es'));
+// console.log(helloWorld('sl'));
+// (b) Have your function default to returning English.
+
+const helloWorld = (language = "en") => {
+
+
+
   if (language === 'es') {
     return 'Hola Mundo'
   } else if (language === 'de') {
@@ -104,16 +124,47 @@ const helloWorld = (language) => {
     return 'Ahoj svet'
   }
 }
-console.log(helloWorld('es'));
-console.log(helloWorld('sl'));
-// (b) Have your function default to returning English.
+
+console.log(helloWorld());
+
 //
 // The Pluralizer
 // (a) Write a function named pluralizer that takes a number and a singular noun as arguments and returns the number and pluralized form of the noun, if necessary.
 //
+const pluralizer = (number, singularWord) => {
+
+  if (singularWord === "goose" && number > 1) {
+    singularWord = "geese";
+    return `${number} of ${singularWord}`
+  }
+
+  if (singularWord === "child" && number > 1) {
+    singularWord = "children";
+    return `${number} of ${singularWord}`
+  }
+
+  if (singularWord === "person" && number > 1) {
+    singularWord = "people";
+    return `${number} of ${singularWord}`
+  }
+
+
+  if (number === 1) {
+    return `${number} of ${singularWord}`
+  }
+  else if (number > 1) {
+
+    return `${number} of ${singularWord}s`
+  }
+
+}
+
+console.log(pluralizer(4, "child"))
+
 // pluralizer(5, "cat")
 // // expected output: "5 cats"
 //
 // pluralizer(1, "dog")
 // // expected output: "1 dog"
 // (b) Enhance your function so it can handle a few collective nouns like "sheep", "goose", "child", "person" and "species".
+
