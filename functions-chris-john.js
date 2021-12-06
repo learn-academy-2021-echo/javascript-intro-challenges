@@ -112,11 +112,33 @@
 // The Pluralizer
 // (a) Write a function named pluralizer that takes a number and a singular noun as arguments and returns the number and pluralized form of the noun, if necessary.
 
-// CHANGE!!!!!!!
-
 // pluralizer(5, "cat")
 // // expected output: "5 cats"
 
 // pluralizer(1, "dog")
 // // expected output: "1 dog"
 // (b) Enhance your function so it can handle a few collective nouns like "sheep", "goose", "child", "person" and "species".
+
+const pluralizer = (num, noun) => {
+    if (noun === "goose" && num > 1){
+        return `${num} geese`
+    }
+    else if (noun === "child" && num > 1){
+        return `${num} children`
+    }
+    else if (noun === "person" && num > 1){
+        return `${num} people`
+    }
+    else if (num === 1){
+        return `${num} ${noun}`
+    } 
+    else if (num > 1){
+        return `${num} ${noun}s`
+    }
+}
+
+// console.log(pluralizer(5, "cat"))
+// console.log(pluralizer(1, "dog"))
+// console.log(pluralizer(4, "goose"))
+// console.log(pluralizer(3, "child"))
+console.log(pluralizer(6, "person"))
