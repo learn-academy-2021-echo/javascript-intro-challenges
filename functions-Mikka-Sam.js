@@ -106,7 +106,7 @@ const greaterNum = (num1,num2) =>{
   }
 }
 
-console.log(greaterNum(3,3)); //should return same 
+console.log(greaterNum(3,3)); //should return same
 console.log(greaterNum(5,3)); //should return 5
 console.log(greaterNum(3,10)); //should return 10
 
@@ -117,3 +117,28 @@ const yelling = (str) =>{
 }
 
 console.log (yelling("sam")); //should return SAM
+
+
+// The World Translator
+// (a) Write a function named helloWorld that takes a language code (e.g. "es", "de", "en") as an argument and returns "Hello World!" in the given language. Ensure you function works for at least 5 languages.
+// (b) Have your function default to returning English.
+
+const helloWorld =(language)=>{
+  if(language == "sp"){
+    return "HolaMundo"
+  }
+  else if (language == "tag"){
+    return "KamustaKaMundo"
+  }
+  else if(language == "ch"){
+  return "NiHaoShijie"
+}
+
+  else if (language == "fr"){
+  return "BonjourLeMonde"
+}
+else {
+  return "helloWorld"
+}
+}
+ console.log(helloWorld("tag"));// This is going to return KamustaKaMundo
