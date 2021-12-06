@@ -115,7 +115,7 @@ console.log(yelling("get off my lawn"));
 
 // declare a function with a language code
 const helloWorld = (langCode) => {
-  // set conditions with if statements to return different languages
+  // set conditions with if statements to return different languages using equality evaluations to check strings
   if (langCode === "es") {
     return "¡Hola, mundo!";
   } else if (langCode === "de") {
@@ -151,25 +151,59 @@ console.log(helloWorld("ru"));
 
 //make a switch statement to do this
 
+// const pluralized = (num, noun) => {
+//   if (num === 1) {
+//     return console.log(`1 ${noun}`);
+//   } else if (num > 1) {
+//     if (noun === 'sheep') {
+//       return console.log(`${num} sheep`);
+//     } else {
+//       return console.log(`${num} ${noun}s`);
+//     }
+//   }
+// }
 
-const pluralized = (num, noun) => {
+// declare function with two args, a number and a noun (string)
+const pluralizer = (num, noun) => {
+  // if num is 1 then just log 1 and a singular noun
   if (num === 1) {
     return console.log(`1 ${noun}`);
-  } else if (num > 1) {
-    if (noun === 'sheep') {
-      return console.log(`${num} sheep`);
-    } else {
-      return console.log(`${num} ${noun}s`);
+    // if num is greater than 1 and weirdif so build out cases
+  } else {
+    // if it's a weird noun, build cases for them
+    switch (noun) {
+      case "sheep":
+        console.log(`${num} sheep`);
+        break;
+      case "child":
+        console.log(`${num} children`);
+        break;
+      case "octopus":
+        console.log(`${num} octopodes`);
+        break;
+      case "goose":
+        console.log(`${num} geese`);
+        break;
+      case "person":
+        console.log(`${num} people`);
+        break;
+      case "species":
+        console.log(`${num} species`);
+      // if it's just a regular noun then just add s (probably the else)
+      default:
+        console.log(`${num} ${noun}s`);
     }
   }
-}
+};
 
-
-pluralized(7, 'cat')
-pluralized(1, 'sheep')
-pluralized(3, 'sheep')
-
-
+pluralizer(7, "cat");
+pluralizer(1, "cat");
+pluralizer(1, "sheep");
+pluralizer(3, "sheep");
+pluralizer(5, "child");
+pluralizer(1, "child");
+pluralizer(2, "octopus");
+pluralizer(1, "octopus");
 
 //
 //
