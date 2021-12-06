@@ -1,5 +1,12 @@
 // Write a statement that takes a variable of item and logs "in budget" if a price is $100 or less.
 
+
+var item = Math.random() * 200
+if (item <= 100) {
+  console.log("In Budget");
+} else {
+  console.log("Above Budget");
+}
 var price = 100
 if(price <= 100) {
   console.log("in budget.")
