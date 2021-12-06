@@ -31,11 +31,49 @@ console.log(oddOrEven(88));
 
 // Write a function named triple that takes a number as an argument and returns the result of that number multiplied by 3.
 
+//declare function with an input of a number
+const triple = (num) => {
+  //return input times 3
+  return console.log(num * 3);
+}
+triple(11)
+
 // Write a function named multiply that takes two numbers as arguments and returns the result of the numbers multiplied together.
+
+// Delclare a function that takes two numbers as inputs and multiplies them together
+const multiply = (num1, num2) => {
+  //Multiply the inputs together
+  return num1 * num2
+}
+
+console.log(multiply(7, 11));
 
 // Write a function named divisibleBy that takes two numbers as arguments and returns whether the first number is evenly divisible by the second so that divisibleBy(10, 5) logs "10 is evenly divisible by 5".
 
+//declare function divisibleBy with two inputs
+const divisibleBy = (dividend, divisor) => {
+  //return if first number is evenly divisible by the second number
+  return dividend % divisor === 0 ? `${dividend} is evenly divisible by ${divisor}` : `${dividend} is not evenly divisible by ${divisor}`
+}
+console.log(divisibleBy(44, 22));
 // Write a function named assignGrade that takes a number score as an argument and returns the letter grade for the score.
+
+//declare function assignGrade with a score as an input
+const assignGrade = (score) => {
+  //return a letter grade for the score
+  if (score >= 90) {
+    return console.log("You got an A")
+  } else if (score >= 80) {
+    return console.log("You got a B");
+  } else if (score >= 70) {
+    return console.log("You got a C");
+  } else if (score >= 60) {
+    return console.log("You got a D");
+  } else {
+    return console.log(`Sorry, you're going to have to retake this course, you got a ${score}% 😿`);
+  }
+}
+assignGrade(Math.floor(Math.random() * 101))
 
 // Write a function named isLonger that takes two strings as arguments and returns the string that contains the most characters.
 
