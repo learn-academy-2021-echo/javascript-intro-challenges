@@ -142,3 +142,17 @@ else {
 }
 }
  console.log(helloWorld("tag"));// This is going to return KamustaKaMundo
+
+ //The Pluralizer
+// (a) Write a function named pluralizer that takes a number and a singular noun as arguments and returns the number and pluralized form of the noun, if necessary.
+
+const pluralizer = (num,noun) =>{
+  if (num === 1){
+    return `${num} ${noun}`;
+  }else if (num > 1){
+    return `${num} ${noun}s`;
+  }
+}
+
+console.log (pluralizer(1,"cat")); //should return 1 cat
+console.log (pluralizer(3,"dog")); //should return 3 dogs
