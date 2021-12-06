@@ -82,18 +82,29 @@
 
 // STRETCH CHALLENGES
 
-const helloWorld = (languageCode) => {
-  if (languageCode === "es"){
-    return "Hola, mundo!"
-  } else if (languageCode === "pt") {
-    return "Ola, mundo!"
-  } else if (languageCode === "fr"){
-    return "Bonjour, le monde!"
-  } else if (languageCode === "it"){
-    return "Ciao, mondo!"
-  } else {
-    return "Hello, world!"
+// const helloWorld = (languageCode) => {
+//   if (languageCode === "es"){
+//     return "Hola, mundo!"
+//   } else if (languageCode === "pt") {
+//     return "Ola, mundo!"
+//   } else if (languageCode === "fr"){
+//     return "Bonjour, le monde!"
+//   } else if (languageCode === "it"){
+//     return "Ciao, mondo!"
+//   } else {
+//     return "Hello, world!"
+//   }
+// }
+
+// console.log(helloWorld("en"));
+
+
+const pluralizer = (amount, noun) => {
+  if(amount === 1){
+    return`${amount} ${noun}`
+  }else{
+    return`${amount} ${noun}s`
   }
 }
 
-console.log(helloWorld("en"));
+console.log(pluralizer(1, "dinosaur"))
