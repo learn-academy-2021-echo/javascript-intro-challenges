@@ -137,9 +137,53 @@ console.log(helloWorld("ru"));
 // The Pluralizer
 // (a) Write a function named pluralizer that takes a number and a singular noun as arguments and returns the number and pluralized form of the noun, if necessary.
 
+// const pluralizer = (num, noun) => {
+//   return console.log(num === 1 ? `${num} ${noun}` : `${num} ${noun}s`);
+// }
+//
+//
 // pluralizer(5, "cat")
-// // expected output: "5 cats"
-
+// // // expected output: "5 cats"
+//
 // pluralizer(1, "dog")
 // // expected output: "1 dog"
 // (b) Enhance your function so it can handle a few collective nouns like "sheep", "goose", "child", "person" and "species".
+
+//make a switch statement to do this
+
+
+const pluralized = (num, noun) => {
+  if (num === 1) {
+    return console.log(`1 ${noun}`);
+  } else if (num > 1) {
+    if (noun === 'sheep') {
+      return console.log(`${num} sheep`);
+    } else {
+      return console.log(`${num} ${noun}s`);
+    }
+  }
+}
+
+
+pluralized(7, 'cat')
+pluralized(1, 'sheep')
+pluralized(3, 'sheep')
+
+
+
+//
+//
+//
+// const expr = 'Papayas';
+// switch (expr) {
+//   case 'Oranges':
+//     console.log('Oranges are $0.59 a pound.');
+//     break;
+//   case 'Mangoes':
+//   case 'Papayas':
+//     console.log('Mangoes and papayas are $2.79 a pound.');
+//     // expected output: "Mangoes and papayas are $2.79 a pound."
+//     break;
+//   default:
+//     console.log(`Sorry, we are out of ${expr}.`);
+// }
