@@ -35,16 +35,16 @@ console.log(oddOrEven(88));
 const triple = (num) => {
   //return input times 3
   return console.log(num * 3);
-}
-triple(11)
+};
+triple(11);
 
 // Write a function named multiply that takes two numbers as arguments and returns the result of the numbers multiplied together.
 
 // Delclare a function that takes two numbers as inputs and multiplies them together
 const multiply = (num1, num2) => {
   //Multiply the inputs together
-  return num1 * num2
-}
+  return num1 * num2;
+};
 
 console.log(multiply(7, 11));
 
@@ -53,8 +53,10 @@ console.log(multiply(7, 11));
 //declare function divisibleBy with two inputs
 const divisibleBy = (dividend, divisor) => {
   //return if first number is evenly divisible by the second number
-  return dividend % divisor === 0 ? `${dividend} is evenly divisible by ${divisor}` : `${dividend} is not evenly divisible by ${divisor}`
-}
+  return dividend % divisor === 0
+    ? `${dividend} is evenly divisible by ${divisor}`
+    : `${dividend} is not evenly divisible by ${divisor}`;
+};
 console.log(divisibleBy(44, 22));
 // Write a function named assignGrade that takes a number score as an argument and returns the letter grade for the score.
 
@@ -62,7 +64,7 @@ console.log(divisibleBy(44, 22));
 const assignGrade = (score) => {
   //return a letter grade for the score
   if (score >= 90) {
-    return console.log("You got an A")
+    return console.log("You got an A");
   } else if (score >= 80) {
     return console.log("You got a B");
   } else if (score >= 70) {
@@ -70,21 +72,67 @@ const assignGrade = (score) => {
   } else if (score >= 60) {
     return console.log("You got a D");
   } else {
-    return console.log(`Sorry, you're going to have to retake this course, you got a ${score}% 😿`);
+    return console.log(
+      `Sorry, you're going to have to retake this course, you got a ${score}% 😿`
+    );
   }
-}
-assignGrade(Math.floor(Math.random() * 101))
+};
+assignGrade(Math.floor(Math.random() * 101));
 
 // Write a function named isLonger that takes two strings as arguments and returns the string that contains the most characters.
 
+// declare a fuction with two arguments
+const isLonger = (string1, string2) => {
+  // compare the two string lenghts and return the longer one
+  return string1.length > string2.length ? string1 : string2;
+};
+
+console.log(isLonger("Noahmeister", "Kirkster"));
+
 // Write a function named greaterNum that takes two numbers as arguments and returns whichever number is the greater (higher) number.
 
+// declare function with two args
+const greaterNum = (num1, num2) => {
+  // return the larger number
+  return num1 > num2 ? num1 : num2;
+};
+
+console.log(greaterNum(35, 363));
+
 // Write a function named yelling that takes a string as an argument and return the string in all uppercase case letters.
+
+// declare function with a string as a arg
+const yelling = (string) => {
+  // use uppercase method on string and return
+  return string.toUpperCase();
+};
+console.log(yelling("get off my lawn"));
 
 // STRETCH Challenges
 // The World Translator
 // (a) Write a function named helloWorld that takes a language code (e.g. "es", "de", "en") as an argument and returns "Hello World!" in the given language. Ensure you function works for at least 5 languages.
 // (b) Have your function default to returning English.
+
+// declare a function with a language code
+const helloWorld = (langCode) => {
+  // set conditions with if statements to return different languages
+  if (langCode === "es") {
+    return "¡Hola, mundo!";
+  } else if (langCode === "de") {
+    return "Hallo, welt!";
+  } else if (langCode === "zh") {
+    return "你好，世界!";
+  } else if (langCode === "ru") {
+    return "Привет, мир!";
+  } else if (langCode === "tl") {
+    return "Hello, mundo!";
+    // defaulting to english if code not included
+  } else {
+    return "Hello, world!";
+  }
+};
+
+console.log(helloWorld("ru"));
 
 // The Pluralizer
 // (a) Write a function named pluralizer that takes a number and a singular noun as arguments and returns the number and pluralized form of the noun, if necessary.
