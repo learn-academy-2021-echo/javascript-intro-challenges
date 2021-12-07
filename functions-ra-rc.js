@@ -152,4 +152,4 @@ const pluralizer = (num, animal) => {
     }
 }
 
-console.log(pluralizer());
+console.log(pluralizer(1, "dog"));
