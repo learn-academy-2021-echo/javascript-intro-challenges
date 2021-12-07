@@ -68,16 +68,51 @@ const assignGrade = (num) => {
 console.log(assignGrade(56));
 //
 // Write a function named isLonger that takes two strings as arguments and returns the string that contains the most characters.
-//
+const isLonger = (str1, str2) => {
+  if (str1.length > str2.length) {
+    return str1;
+  }
+  return str2;
+}
+
+console.log(isLonger("rocket", "bunny"))
+
 // Write a function named greaterNum that takes two numbers as arguments and returns whichever number is the greater (higher) number.
+const greaterNum = (num1, num2) => {
+  if (num1 > num2){
+    return num1;
+  } else {
+    return num2
+  }
+}
+
+console.log(greaterNum(7,65));
 //
 // Write a function named yelling that takes a string as an argument and return the string in all uppercase case letters.
+const yelling = (str) => {
+  return str.toUpperCase();
+}
+console.log(yelling("madvillian"));
+
 //
 // STRETCH Challenges
 // The World Translator
 // (a) Write a function named helloWorld that takes a language code (e.g. "es", "de", "en") as an argument and returns "Hello World!" in the given language. Ensure you function works for at least 5 languages.
 // (b) Have your function default to returning English.
 //
+const helloWorld = (langCode = 'en') => {
+  const pairs = {'en': 'Hello World', 'es': 'Hola Mundo', 'de': 'Hej Verden', 'fr': 'Bonjour le monde', 'it': 'Cia mondo'};
+
+  try {
+    return pairs[langCode];
+  } catch (e) {
+    return 'language not supported';
+  }
+}
+
+console.log(helloWorld());
+console.log(helloWorld('fr'));
+
 // The Pluralizer
 // (a) Write a function named pluralizer that takes a number and a singular noun as arguments and returns the number and pluralized form of the noun, if necessary.
 //
@@ -87,3 +122,11 @@ console.log(assignGrade(56));
 // pluralizer(1, "dog")
 // // expected output: "1 dog"
 // (b) Enhance your function so it can handle a few collective nouns like "sheep", "goose", "child", "person" and "species".
+const pluralizer = (num, noun) => {
+  if (num > 1) {
+    return `${num} ${noun}s`;
+  }
+  return `${num} ${noun}`;
+}
+console.log(pluralizer(5, "cat"));
+console.log(pluralizer(1, "dog"));
